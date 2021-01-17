@@ -90,6 +90,10 @@ p {
   margin: 70px 0;
 }
 
+.logo img {
+  width: 125px;
+}
+
 .col-3 {
   flex-basis: 30%;
   min-width: 250px;
@@ -149,6 +153,7 @@ h3 {
   width: 30px;
   height: 30px;
 }
+
 /*footer----*/
 
 .footer {
@@ -301,9 +306,9 @@ th:last-child {
   background: #000629;
 }
 
-/*-----account-page-----*/
+/*-----Registrer page-----*/
 
-.account-page {
+.registrer-page {
   padding: 50px 0;
   background: linear-gradient(#0e1332, #707070);
 }
@@ -359,12 +364,51 @@ form a {
 #Indicator {
   width: 100px;
   border: none;
-  background: red;
+  background: #f34a33;
   height: 3px;
   margin-top: 8px;
   transform: translateX(100px);
 }
-/*-------media query----*/
+
+/*----sell games----*/
+
+.sgbtn .btn {
+  width: 50%;
+}
+.col-2 .addimg {
+  width: 75%;
+}
+
+/*------account-----*/
+.underline {
+  text-decoration: underline;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #04bfbf;
+}
+.main {
+  color: #f34a33;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+.main p {
+  color: #f34a33;
+}
+.main-col-1,
+.main-col-2 {
+  min-width: 250px;
+  margin-bottom: 20px;
+  flex-basis: auto;
+}
+.main-col-2 {
+  font-weight: bold;
+}
+
+.row-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*-------Media Queries----*/
 
 @media only screen and (max-width: 800px) {
   nav ul {
@@ -382,7 +426,7 @@ form a {
   }
   nav ul li a {
     color: #f34a33;
-    background: white;
+    display: none;
   }
   .menu-icon {
     display: block;
@@ -393,6 +437,7 @@ form a {
 @media only screen and (max-width: 600px) {
   .row {
     text-align: center;
+    display: block;
   }
   .col-2,
   .col-3,

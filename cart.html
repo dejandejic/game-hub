@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store - Game Hub</title>
+    <title>Cart - Game Hub</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">    
@@ -15,24 +15,23 @@
     <div class="container">
         <div class="navbar">
          <div class="logo">
-            <img src="/images/logo.png" alt="logo" width="125px">
+           <a href="index.html"><img src="/images/logo.png" alt="logo">
         </div>
         <nav>
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">STORE</a></li>
-                <li><a href="">REGISTRER</a></li>
-                <li><a href="">CONTACT</a></li>
-                <li><a href="">ACCOUNT</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="registrer.html">REGISTRER</a></li>
+                <li><a href="account.html">ACCOUNT</a></li>
             </ul>
         </nav>
-        <img src="images/cart.png" class="cart">
-        <img src="/images/menu.png" class="menu-icon" onclick="menutoggle()">
+        <img src="images/cart.png" class="cart" alt="shopping cart">
+        <img src="/images/menu.png" class="menu-icon" alt="hamburger menu">
         </div>
     </div>
 </div>
 
-<!----- car item details ----->
+<!----- cart items----->
 <div class="small-container cart-page">
     <table>
         <tr>
@@ -43,7 +42,7 @@
         <tr>
             <td>
                 <div class="cart-info">
-                    <img src="images/usedgames.png">
+                    <img src="images/usedgames.png" alt="game 1 in cart">
                     <div>
                         <p>Game 1</p>
                         <small>599,-</small>
@@ -57,7 +56,7 @@
         <tr>
             <td>
                 <div class="cart-info">
-                    <img src="images/sell.png">
+                    <img src="images/sell.png" alt="game 2 in cart">
                     <div>
                         <p>Game 2</p>
                         <small>399,-</small>
@@ -84,6 +83,11 @@
             <tr>
                 <td>Total</td>
                 <td>999,-</td>
+            </tr>
+            <tr>
+                <td>
+                <a class="btn">Buy now &#10132;</a>
+                </td>
             </tr>
         </table>
     </div>
