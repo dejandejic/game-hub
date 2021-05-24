@@ -408,6 +408,54 @@ form a {
   display: flex;
   flex-wrap: wrap;
 }
+
+/*----contact page----*/
+
+.contact-container {
+  padding: 15rem;
+  border: 1px solid black;
+}
+
+.contact-container h1 {
+  text-align: center;
+  margin: 10px;
+}
+
+form {
+  padding: 2rem;
+  background: lightgray;
+  border: 1rem;
+}
+
+input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 8px;
+  margin-top: 1px;
+}
+
+button {
+  display: inline-block;
+  background: #f34a33;
+  color: white;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+}
+button:hover {
+  background: #04bfbf;
+}
 /*-------Media Queries----*/
 
 @media only screen and (max-width: 800px) {
