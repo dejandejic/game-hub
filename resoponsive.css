@@ -1,0 +1,44 @@
+@media only screen and (max-width: 800px) {
+    nav ul {
+        min-height: 100vh;
+        width: 100%;
+        background: #0e1332;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 3rem;
+        text-align: center;
+        z-index: 100;
+        display: none;
+    }
+
+
+    /* FOOTER */
+    .footer .footer-col {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .cart {
+        margin-left: 1rem;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+/* position: absolute;
+    flex-direction: column;
+    width: 100%;
+    left: 0;
+    background: black;
+    top: 7rem; */

@@ -1,4 +1,4 @@
-const form = document.querySelector("#contactForm");
+const form = document.querySelector(".contact-form form");
 const firstName = document.querySelector("#firstName");
 const nameError = document.querySelector("#nameError");
 const subject = document.querySelector("#subject");
@@ -9,32 +9,32 @@ const adress = document.querySelector("#adress");
 const adressError = document.querySelector("#adressError");
 
 
-function validateForm(){
+function validateForm() {
     event.preventDefault();
 
 
-    if(chechkLength(firstName.value, 0) === true) {
+    if (chechkLength(firstName.value, 0) === true) {
         nameError.style.display = "none";
     }
     else {
         nameError.style.display = "block";
     }
-    if(chechkLength(subject.value, 9) === true) {
+    if (chechkLength(subject.value, 9) === true) {
         subjectError.style.display = "none";
     }
     else {
         subjectError.style.display = "block";
     }
-    if(chechkLength(adress.value, 24) === true) {
+    if (chechkLength(adress.value, 24) === true) {
         subjectError.style.display = "none";
     }
     else {
         adressError.style.display = "block";
     }
-    if(validateEmail(email.value) === true) {
+    if (validateEmail(email.value) === true) {
         emailError.style.display = "none";
     }
-    else{
+    else {
         emailError.style.display = "block";
     }
     //console.log("test");
@@ -43,7 +43,7 @@ function validateForm(){
 form.addEventListener("submit", validateForm)
 
 function chechkLength(value, len) {
-    if(value.trim().length > len) {
+    if (value.trim().length > len) {
         return true;
     } else {
         return false;

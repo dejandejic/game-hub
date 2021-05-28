@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Game Hub</title>
+    <title>Registrer - Game Hub</title>
 
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
@@ -26,9 +26,9 @@
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="store.html">STORE</a></li>
-                <li><a href="register.html">REGISTRER</a></li>
+                <li><a href="register.html" class="active">REGISTRER</a></li>
                 <li><a href="account.html">ACCOUNT</a></li>
-                <li><a href="contact.html" class="active">CONTACT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
             <a class="cart" href="cart.html">
                 <div class="cart-icon">
@@ -52,49 +52,35 @@
 
     <!-- Main Content -->
     <main class="container ">
-        <div class="row heading">
-            <div class="col-2">
-                <h2 class="title active">Contact </h2>
+        <div class="form-container">
+            <div class="form-btn">
+                <span>Login</span>
+                <span>Registrer</span>
+                <hr id="Indicator">
             </div>
-        </div>
-
-        <div class="contact-form">
-            <form>
-                <div class="form-input">
-                    <label>
-                        <span>Name</span>
-                        <input name="firstName" id="firstName" placeholder="Full name">
-                    </label>
-                    <div class="form-error" id="nameError">Please enter your name</div>
-                </div>
-
-                <div class="form-input">
-                    <label>
-                        <span>Subject</span>
-                        <input name="subject" id="subject" placeholder="Subject">
-                    </label>
-                    <div class="form-error" id="subjectError">must have a value with a minimum length of 10</div>
-                </div>
-
-                <div class="form-input">
-                    <label>
-                        <span>Email</span>
-                        <input name="email" id="email" placeholder="Email">
-                    </label>
-                    <div class="form-error" id="emailError">must have a value and be formatted like an email address
+            <div class="register-form">
+                <form>
+                    <div class="form-input">
+                        <label>
+                            <input name="username" id="username" placeholder="Username">
+                        </label>
                     </div>
-                </div>
 
-                <div class="form-input">
-                    <label>
-                        <span>Adress</span>
-                        <input name="adress" id="adress" placeholder="Adress">
-                    </label>
-                    <div class="form-error" id="adressError"> must have a value with a minimum length of 25</div>
-                </div>
+                    <div class="form-input">
+                        <label>
+                            <input name="email" id="email" placeholder="Email">
+                        </label>
+                    </div>
 
-                <input type="submit" value="Submit">
-            </form>
+                    <div class="form-input">
+                        <label>
+                            <input name="password" id="password" placeholder="Password">
+                        </label>
+                    </div>
+
+                    <button class="btn">Register</button>
+                </form>
+            </div>
         </div>
     </main>
 
