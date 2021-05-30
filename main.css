@@ -225,7 +225,6 @@ form button:hover {
 
 .btn:hover {
   background: #04bfbf;
-  color: white;
 }
 
 /* BASE END */
@@ -234,7 +233,20 @@ p {
   color: white;
 }
 
-/* .col-2 img {
+/* PREORDER */
+
+.preorder {
+  padding: 70px 0;
+}
+
+.preorder .row {
+  align-items: center;
+}
+.preorder .col-2 img {
+  padding: 20px;
+}
+
+.col-2 img {
   max-width: 100%;
   padding: 50px 0;
 }
@@ -243,7 +255,7 @@ p {
   font-size: 50px;
   line-height: 60px;
   margin: 25px 04;
-} */
+}
 
 /* CART PAGE */
 
