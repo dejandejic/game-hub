@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-/* New STYLES */
-
 .bg-gradient {
   background: linear-gradient(#0e1332, #707070);
   background-repeat: no-repeat;
@@ -44,6 +42,12 @@ body {
   display: flex;
   align-items: center;
   padding: 20px;
+}
+#hamburger-menu {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  display: none;
 }
 
 nav {
@@ -523,5 +527,20 @@ button:hover {
   }
   .cart-info p {
     display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    position: absolute;
+    top: 84px;
+    left: -100%;
+    z-index: 0;
+    background: chartreuse;
+    width: 100%;
+    transition: all ease 500ms;
+  }
+  .menu-toggle#navbar {
+    left: 0px;
   }
 }
