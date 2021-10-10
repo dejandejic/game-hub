@@ -217,14 +217,14 @@ form button:hover {
 .btn {
   display: inline-block;
   background: #ffffff;
-  color: #f34a33;
+  color: #000000;
   padding: 8px 30px;
   margin: 30px 0;
   border-radius: 30px;
 }
 
 .btn:hover {
-  background: #04bfbf;
+  background: #0effff;
 }
 
 /* BASE END */
@@ -367,7 +367,7 @@ td p {
 }
 
 .total-price .checkout-btn {
-  background: #2568ff;
+  background: #009d05;
   color: white;
   line-height: 1.2;
 }
